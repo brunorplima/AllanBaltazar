@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Banner from './components/banner/Banner';
+import Intro from './components/intro/Intro';
+import WishList from './components/whish-list/WishList';
+import ThankMural from './components/thank-mural/ThankMural';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <Intro />
+      <WishList />
+      <ThankMural />
     </div>
   );
 }
